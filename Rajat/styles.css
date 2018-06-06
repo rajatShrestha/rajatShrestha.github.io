@@ -148,18 +148,6 @@
 
   }
 
-  .birds {
-    position: absolute;
-    top: 10%;
-    size: 60%;
-    transition-duration: 4s;
-    transition-timing-function: cubic-bezier(.36,1.07,.56,.76);
-  }
-
-  .birds:hover {
-    top: -20%;
-  }
-
   .home-content{
     position: absolute;
     text-align: center;
