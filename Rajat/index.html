@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="responsive.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=anton' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
@@ -17,11 +16,47 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
+    <picture>
+      <source srcset="images/sdm.jpeg" media="(max-width: 600px)">
+      <source srcset="images/sd.jpeg" media="(max-width: 1500px)">
+      <source srcset="images/sd.jpeg">
+      <img src="images/sd.jpeg" style="width:100%;">
+    </picture>
+    <h3 id="homeT" style="position: absolute; top: 10%;"></h3>
 
-    <div class="intro">
-      <h3 id="homeT"></h3>
-    </div>
-
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="#" >
+          <img src="images/icons/v.png" class="vfooter-img">
+        </a>
+        <a href="#" >
+          <img src="images/icons/b.png" class="bfooter-img">
+        </a>
+        <a href="#" >
+          <img src="images/icons/g.png" class="gfooter-img">
+        </a>
+        <a href="#" >
+          <img src="images/icons/o.png" class="ofooter-img">
+        </a>
+        <a href="#" >
+          <img src="images/icons/r.png" class="rfooter-img">
+        </a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Portfolio</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Research</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+        <p>Rajat Shrestha © 2018</p>
+      </div>
+    </footer>
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -33,6 +68,5 @@
       }
     </script>
     <script src="scrypts.js" type="text/javascript"></script>
-
   </body>
 </html>
