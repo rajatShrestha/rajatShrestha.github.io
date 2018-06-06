@@ -1,87 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta content="Home page" name="description">
-    <meta content="Rajat Shrestha" name="author">
-    <title>Home</title>
-    <link href="images/favicon.ico" rel="shortcut icon">
-    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="responsive.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=anton' rel='stylesheet'>
   </head>
 
   <body>
-    <!--HEADER -->
-    <div class = "for-header">
-      <a href="home.html" class="activePage">Home</a>
-      <a href="portfolio.html" class="nav-items">Portfolio</a>
-      <a href="blog.html" class="nav-items">Blog</a>
-      <a href="research.html" class="nav-items">Research</a>
-      <a href="contact.html" class="nav-items">Contact</a>
+    <div class="topnav" id="myTopnav">
+      <a href="home.html" class="active">Home</a>
+      <a href="portfolio.html" >Portfolio</a>
+      <a href="blog.html" >Blog</a>
+      <a href="research.html" >Research</a>
+      <a href="contact.html" >Contact</a>
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+    <picture>
+      <source srcset="images/sdm.jpeg" media="(max-width: 600px)">
+      <source srcset="images/sd.jpeg" media="(max-width: 1500px)">
+      <source srcset="images/sd.jpeg">
+      <img src="images/sd.jpeg" style="width:100%;">
+    </picture>
+    <h3 id="homeT" style="position: absolute; top: 10%;"></h3>
 
-    <!--CONTENT-->
-    <div class="content" style="height: 100%">
-      <!--HOME-->
-      <section id="home">
-        <MARQUEE class= "birds">
-            <img src="images/birds.png" height="80px" >
-        </MARQUEE>
-        <div class="home-content">
-
-          
-          <h1>Hello</h1><br>
-          <div class="typing">
-              <h3 id="homeT"></h3>
-          </div>
-        </div>
-      </section>
-
-      <!--ABOUT-->
-      <section >
-        <div class="about">
-          <img src="images/paint.jpeg" class="about-img">
-
-          <h1 class="about-name" style="position: absolute;
-           left: 55%;
-            font-size:30px; "> Rajat Shrestha </h1>
-
-          <table class="w-content">
-            <tr>
-              <td class="title">Name </td>
-              <td class="break">:</td>
-              <td> Rajat Shrestha</td>
-            </tr>
-            <tr>
-              <td class="title">Phone </td>
-              <td class="break">:</td>
-              <td> +9818275747</td>
-            </tr>
-            <tr>
-              <td class="title">Email </td>
-              <td class="break">:</td>
-              <td> np01cp4a170021@islingtoncollege.edu.np</td>
-            </tr>
-            <tr>
-              <td class="title">Address </td>
-              <td class="break">:</td>
-              <td> Townplanning 26, Samakhushi, KTM<br></td>
-            </tr>                          
-          </table>
-        </div>
-        <div class = "for-home">
-          <a href="portfolio.html" class="about-items">Portfolio</a>
-          <a href="blog.html" class="about-items">Blog</a>
-          <a href="research.html" class="about-items">Research</a>
-          <a href="contact.html" class="about-items">Contact</a>
-        </div>
-      </section>
-    </div>
-
-    <!--Footer -->
-    <div class = "for-footer" style="top: 1279px;">
-      <h2> Rajat Shrestha </h2>
-    </div>
-    
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <a href="#" >
+          <img src="images/icons/v.png" class="vfooter-img">
+        </a>
+        <a href="#" >
+          <img src="images/icons/b.png" class="bfooter-img">
+        </a>
+        <a href="https://www.google.com/maps/place/27%C2%B043'48.9%22N+85%C2%B018'55.9%22E/@27.730244,85.3149858,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d27.7302444!4d85.3155329" >
+          <img src="images/icons/g.png" class="gfooter-img">
+        </a>
+        <a href="#" >
+          <img src="images/icons/o.png" class="ofooter-img">
+        </a>
+        <a href="#" >
+          <img src="images/icons/r.png" class="rfooter-img">
+        </a>
+      </div>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Portfolio</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Research</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+        <p>Rajat Shrestha © 2018</p>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+      }
+    </script>
     <script src="scrypts.js" type="text/javascript"></script>
   </body>
 </html>

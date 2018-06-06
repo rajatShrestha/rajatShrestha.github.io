@@ -187,28 +187,28 @@
     height: 35px;
   }
 
-  .vfooter-img: hover {
+  .vfooter-img:hover {
     background-color: #7f00ff;
     width: 35px;
     height: 35px;
   }
-  .bfooter-img: hover {
+  .bfooter-img:hover {
     background-color: #00f;
     width: 35px;
     height: 35px;
   }
-  .gfooter-img: hover {
+  .gfooter-img:hover {
     background-color: #0f0;
     width: 35px;
     height: 35px;
   }
-  .ofooter-img: hover {
+  .ofooter-img:hover {
     background-color: #ff8800;
     width: 35px;
     height: 35px;
   }
-  .rvfooter-img: hover {
-    background-color: #f00;
+  .rfooter-img:hover {
+    background-color: #ff0000;
     width: 35px;
     height: 35px;
   }
