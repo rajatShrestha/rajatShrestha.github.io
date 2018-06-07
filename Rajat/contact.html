@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta content="Contact" name="description">
-    <meta content="Rajat Shrestha" name="author">
-    <title>Contact</title>
-    <link href="images/favicon.ico" rel="shortcut icon">
-    <link href="styles.css" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="responsive.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=anton' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       #contact {
         background: url('images/contact.jpg');
@@ -74,52 +72,67 @@
         border-bottom: 1px solid #111111;
         background: #999999;
       }
-
-
-    </style> 
+    </style>   
   </head>
 
-  <body style="height: 615px;">
-    <!--HEADER -->
-    <div class = "for-header">
-      <a href="home.html" class="nav-items">Home</a>
-      <a href="portfolio.html" class="nav-items">Portfolio</a>
-      <a href="blog.html" class="nav-items">Blog</a>
-      <a href="research.html" class="nav-items">Research</a>
-      <a href="contact.html" class="activePage">Contact</a>
-    </div>
-
-    <!--Contct Form -->
+  <body>
     
-    <section id="contact">
-      
-      <div class="que">
-        <h2>Do you like this page?</h2>
-        <button class="btn" style="margin-left: 50px;" onclick="yes()"><b>Yes</b></button>
-        <button class="esc" onclick="no()"><b>No</b></button>
-      </div>
-     
-      <div class="contact-form">
-        <form name="contact" onsubmit="form()">  
-          <label><h1>Contact </h1></label>
-          <p>Name : &nbsp;<input type="text" name="name"></p>
-          <p>Age&nbsp; &nbsp; : &nbsp;<input type="text" name="age"></p>
-          <p>Email  : &nbsp;<input type="text" name="email"></p>
-          <p><b>Gender : </b> <input type="radio" name="gender" value="male" checked> Male 
-          <input type="radio" name="gender" value="female"> Female  </p>
-          <p>Message</p>
-          <textarea name="message" rows="5" cols="50" placeholder="Your message Here"></textarea>
-          <br>
-          <button type="submit" class="btn"> <h3>Submit</h3></button>
-          </form>
-      </div>
-    </section>
-
-    <!--Footer -->
-    <div class = "for-footer-contact" >
-      <h2> Rajat Shrestha </h2>
+    <div class="topnav" id="myTopnav">
+      <a href="contact.html" class="current-page">Contact</a>
+      <a href="home.html" >Home</a>
+      <a href="portfolio.html" >Portfolio</a>
+      <a href="blog.html" >Blog</a>
+      <a href="research.html" >Research</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    
+  
+      <footer class="footer-distributed" style="position: absolute; top: 130%">
+        <div class="footer-right">
+          <a href="#" >
+            <img src="images/icons/v.png" class="vfooter-img">
+          </a>
+          <a href="#" >
+            <img src="images/icons/b.png" class="bfooter-img">
+          </a>
+          <a href="https://www.google.com/maps/place/27%C2%B043'48.9%22N+85%C2%B018'55.9%22E/@27.730244,85.3149858,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d27.7302444!4d85.3155329" >
+            <img src="images/icons/g.png" class="gfooter-img">
+          </a>
+          <a href="#" >
+            <img src="images/icons/o.png" class="ofooter-img">
+          </a>
+          <a href="#" >
+            <img src="images/icons/r.png" class="rfooter-img">
+          </a>
+        </div>
+        <div class="footer-left">
+          <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Portfolio</a>
+            ·
+            <a href="#">Blog</a>
+            ·
+            <a href="#">Research</a>
+            ·
+            <a href="#">Contact</a>
+          </p>
+          <p>Rajat Shrestha © 2018</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+      }
+    </script>
     <script src="scrypts.js" type="text/javascript"></script>
   </body>
 </html>

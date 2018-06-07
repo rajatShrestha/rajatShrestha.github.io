@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta content="Blog" name="description">
-    <meta content="Rajat Shrestha" name="author">
-    <title>Blog</title>
-    <link href="images/favicon.ico" rel="shortcut icon">
-    <link href="styles.css" rel="stylesheet">
-    <style>
-      .blog-image-right {
-        position: absolute;
-        top: 115%;
-        float: right;
-        max-width: 85%;
-        margin: 30px;
-        margin-left: 170px;
-        margin-right: 150px;
-        padding: 2px;
-        border: 2px solid;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="responsive.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=anton' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <!--HEADER -->
-    <div class = "for-header">
-      <a href="home.html" class="nav-items">Home</a>
-      <a href="portfolio.html" class="nav-items">Portfolio</a>
-      <a href="blog.html" class="activePage">Blog</a>
-      <a href="research.html" class="nav-items">Research</a>
-      <a href="contact.html" class="nav-items">Contact</a>
+    <div class="topnav" id="myTopnav">
+      <a href="blog.html" class="current-page">Blog</a>
+      <a href="home.html" >Home</a>
+      <a href="portfolio.html" >Portfolio</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="research.html" >Research</a>
+      <a href="contact.html" >Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-
-    <!--CONTENTS-->
-    <div class="headings">
-      <h1 style="margin-top: 45px;">Blog</h1>
-      <img src="images/buddha.jpeg" class="column" style="margin-top: 35px; padding: 2px; height: 50%"> 
-    </div>
-
-    <div class="paragraphs" style="top: 21%; float: right; left: 45%">
-      <center><h3>Impact of Technology</h3></center><br>
-      <p> &nbsp;&nbsp;To be, or not to be: that is the question: whether 'tis nobler in the mind to suffer the slings and arrows of outrageous fortune, or to take arms against a sea of troubles, and by opposing end them? To die: to sleep; no more; and, by a sleep to say we end the heart-ache and the thousand natural shocks that flesh is heir to, 'tis a consummation devoutly to be wish'd. To die, to sleep; to sleep: perchance to dream: ay, there's the rub; for in that sleep of death what dreams may come when we have shuffled off this mortal coil, must give us pause. The we whought wear, and slereard en and th tral con and thin deation a whe whand mor coutly con: pal curns, be, by to beations sumely farestiont aw's and th witho melay, a curn to mand fly fron ther the hind noblesolutive knot weams the pitho we. </p> 
-      <img src="images/bouddha.jpeg" class="blog-image-right"> 
-    </div>
-
-    <div class="paragraphs" style="top: 110%; float: right; left: 5%; width: 670px">
-      <p> &nbsp;&nbsp; There's the respect that makes calamity of so long a life; for who would bear the whips and scorns of time, the oppressor's wrong, the proud man's contumely, the pangs of dispriz'd love, the law's delay, the insolence of office, and the spurns that patient merit of the unworthy takes, when he himself might his quietus make with a bare bodkin? Who would fardels bear, to grunt and sweat under a weary life, but that the dread of something after death, the undiscover'd country from whose bourn no traveller returns, puzzles the will, and makes us rather bear those ills we have, than fly to others that we know not of? Thus consience doth make cowards of us all; and thus the native hue of resolution is sicklied o'er with the pale cast of thought, and enterprises of great pith and moment with this regard their currents turn awry, and lose the name of action. </p>
-      <br>
-
-      <p> &nbsp;&nbsp; The we whought wear, and slereard en and th tral con and thin deation a whe whand mor coutly con: pal curns, be, by to beations sumely farestiont aw's and th witho melay, a curn to mand fly fron ther the hind noblesolutive knot weams the pitho we woub; a be: th and mins might, offler 'tied to offleep; fleep; frous of ot trave, to give preamentusay, the scons, the bea spurn an's of givereamight of and life; to lont mat thave, to we he une, them? Whose entumelf dient puzzlessome to make der coutragai </p> 
-      <br>
-
-      <p> &nbsp;&nbsp; Hence, technlogy has been the greatest achivement that has revolutionized the entire earth. Any further advancement in technology will surely be amusing and very fruitful.  </p>   
-    </div>
-
-    <div class="content" style="top: 255%;  background-color: #4f5f5f">
-      <div class="headings">
-      <center><h1>Impact of Technology</h1></center><br>
-      <h2>Curse of Technology</h2>
+    <footer class="footer-distributed" style="position: absolute; top: 130%">
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/rajat-shrestha-41a338165/" >
+          <img src="images/icons/v.png" class="vfooter-img">
+        </a>
+        <a href="https://www.facebook.com/rajat.shrestha.129" >
+          <img src="images/icons/b.png" class="bfooter-img">
+        </a>
+        <a href="https://www.google.com/maps/place/27%C2%B043'48.9%22N+85%C2%B018'55.9%22E/@27.730244,85.3149858,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d27.7302444!4d85.3155329" >
+          <img src="images/icons/g.png" class="gfooter-img">
+        </a>
+        <a href="https://www.instagram.com/rajat__shrestha/" >
+          <img src="images/icons/o.png" class="ofooter-img">
+        </a>
+        <a href="https://plus.google.com/u/0/112361983691225866305" >
+          <img src="images/icons/r.png" class="rfooter-img">
+        </a>
       </div>
-      <div class="paragraphs" style="top: 25%; float: left; width: 670px;">
-        <p> &nbsp;&nbsp; The we whought wear, and slereard en and th tral con and thin deation a whe whand mor coutly con: pal curns, be, by to beations sumely farestiont aw's and th witho melay, a curn to mand fly fron ther the hind noblesolutive knot weams the pitho we woub; a be: th and mins might, offler 'tied to offleep;  </p> 
-        <br>
-        <p> &nbsp;&nbsp;The we whought wear, and slereard en and th tral con and thin deation a whe whand mor coutly con: pal curns, be, by to beations sumely farestiont aw's and th witho melay, a curn to mand fly fron ther the hind noblesolutive knot weams the pitho we woub; </p>
-        <img src="images/addiction.jpg" class="blog-image-right" style="top: 0%; left: 80%; height: 90%"> 
+      <div class="footer-left">
+        <p class="footer-links">
+          <a href="home.html">Home</a>.
+          <a href="portfolio.html" >Portfolio</a>.
+          <a href="blog.html" >Blog</a>.
+          <a href="research.html" >Research</a>.
+          <a href="contact.html" >Contact</a>
+        </p>
+        <p>Rajat Shrestha © 2018</p>
       </div>
-
-    </div>   
-    <!--Footer -->
-    <div class = "for-footer" style="position: absolute; top: 340%">
-      <h2> Rajat Shrestha </h2>
-    </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+      }
+    </script>
+    <script src="scrypts.js" type="text/javascript"></script>
   </body>
 </html>

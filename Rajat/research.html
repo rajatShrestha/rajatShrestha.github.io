@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta content="Portfolio" name="description">
-    <meta content="Rajat Shrestha" name="author">
-    <title>Research</title>
-    <link href="images/favicon.ico" rel="shortcut icon">
-    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="responsive.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=anton' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+
   <body>
-    <!--HEADER -->
-    <div class = "for-header">
-      <a href="home.html" class="nav-items">Home</a>
-      <a href="portfolio.html" class="nav-items">Portfolio</a>
-      <a href="blog.html" class="nav-items">Blog</a>
-      <a href="research.html" class="activePage">Research</a>
-      <a href="contact.html" class="nav-items">Contact</a>
-    </div>
-
-    <!--Content-->
-
-    <div class="research-content">
-      <h1 class="page-head">Research</h1> 
-      <div class="page-info">
-        <h1>
-        <p> To perfect my website, I had gone through some pretty intresting websites to get inspired by them and to apply the techniques used in them to my own website. The websites and their links are mentioned below with breif description of each website. </p> </div>
-      <img src="images/focus.jpeg" class="page-img">
-    </div>
-    <div class="research-content" style="background-color: #110101aa">
-      <h2 class="page-head">Portfolio Template</h2>
-      <div class="page-info">
-         <p>This template created by Muhamad Reza Adityawarman in the freebiesbug.com was an excellent example how a portfolio should be. It also contained intresting elements and was free to download so I had a chance to tinker with it to gasp better understanding on how html , css and javascript works.</p>
-      </div>
-      <a href="https://freebiesbug.com/code-stuff/bodo-free-html-personal-portfolio-template/" class="page-img"><img src="images/res1.png" > </a>
-    </div>
-    <div class="research-content" style="background-color: #111110aa">
-      <h2 class="page-head">Typed java script</h2>
-      <div class="page-info"> <p>This is a page which contains a JavaScript library which creates a typing effect in web pages. The library was too complex so i made a javascript code to do the same typing effect. But the created javascript was very simpler than that included in the website.</p></div>
-      <a href="https://mattboldt.com/demos/typed-js/" class="page-img">
-        <img src="images/res2.png" >
-      </a> 
-    </div>
-    <div class="research-content" style="background-color: #001110aa">
-      <h2 class="page-head">Sticky or fixed Nav-Bar</h2>
-      <div class="page-info"> <p> The site 9gag had a sticky nav-bar which was visible throught thee whole page no matter how far down the content is. This allows user to quickly navigate through the pages of the site. </p>
-    </div>
-      <a href="https://9gag.com/" class="page-img">
-        <img src="images/res3.png" >
-      </a> 
-
-    </div>
-    <div class="research-content" style="background-color: #000111aa">
-      <h2 class="page-head">Hover Effect</h2>
-      <div class="page-info"> <p>The most used effect in my website is hover. This site had some hover effect which was quite interisting for me so after some serches I was able to add hover, transition effect in most of my website content.</p></div>
-      <a href="https://unsplash.com/" class="page-img">
-        <img src="images/res4.png" >
-      </a> 
-    </div>
-    <div class="research-content" style="background-color: #110011aa">
-      <h2 class="page-head">W3 Schools</h2>
-      <div class="page-info"> <p>This was a great site which had many tutorials and notes on Html, CSS, and Java Script. This website was very usefull as a guide as it cleared the common concepts on the related topics. </p></div>
-      <a href="https://www.w3schools.com/css/css_positioning.asp" class="page-img">
-        <img src="images/res5.png" >
-      </a> 
-    </div>
     
-    <!--Footer -->
-    <div class = "for-footer" style="top: 597%">
-      <h2> Rajat Shrestha </h2>
+    <div class="topnav" id="myTopnav">
+      <a href="research.html" class="current-page">Research</a>
+      <a href="home.html" >Home</a>
+      <a href="portfolio.html" >Portfolio</a>
+      <a href="blog.html" >Blog</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="contact.html" >Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      
     </div>
+  
+      <footer class="footer-distributed" style="position: absolute; top: 130%">
+        <div class="footer-right">
+          <a href="#" >
+            <img src="images/icons/v.png" class="vfooter-img">
+          </a>
+          <a href="#" >
+            <img src="images/icons/b.png" class="bfooter-img">
+          </a>
+          <a href="https://www.google.com/maps/place/27%C2%B043'48.9%22N+85%C2%B018'55.9%22E/@27.730244,85.3149858,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d27.7302444!4d85.3155329" >
+            <img src="images/icons/g.png" class="gfooter-img">
+          </a>
+          <a href="#" >
+            <img src="images/icons/o.png" class="ofooter-img">
+          </a>
+          <a href="#" >
+            <img src="images/icons/r.png" class="rfooter-img">
+          </a>
+        </div>
+        <div class="footer-left">
+          <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Portfolio</a>
+            ·
+            <a href="#">Blog</a>
+            ·
+            <a href="#">Research</a>
+            ·
+            <a href="#">Contact</a>
+          </p>
+          <p>Rajat Shrestha © 2018</p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+      }
+    </script>
+    <script src="scrypts.js" type="text/javascript"></script>
   </body>
 </html>

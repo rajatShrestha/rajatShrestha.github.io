@@ -3,7 +3,7 @@
   body {
     margin: 0;
     font-family: 'anton', sans-serif;
-    background-color: #111;
+    background-color: #010201;
     font-size: 11pt;
   }
 /*---------------------------Nav-Bar -----------------------------------*/
@@ -23,6 +23,7 @@
   }
 
   .topnav a:hover {
+    transition-duration: 0.5s;
     background-color: #ddd;
     color: black;
   }
@@ -44,9 +45,11 @@
     @media screen and (max-width: 650px) {
       .topnav a {
         display: none;
-
       }
 
+      .topnav.responsive a.active {
+        display: none;
+      }
 
       .topnav a.icon {
         background-color: #000;
@@ -57,10 +60,15 @@
       }
       .topnav a.current-page {
         display: inline-block;
-        background-color: #000;
+        background-color: #200;
         color: #fff;
         float: left;
-        display: block;
+        z-index: 2;
+      }
+      .topnav.responsive a.current-page {
+        display: inline-block;
+        background-color: #200;
+        color: #fff;
         z-index: 2;
       }
       .topnav.responsive {
@@ -86,7 +94,6 @@
         background-color: #55555555;
       }
     }
-
 /*---------------------------Home ---------------------------------------*/
   #homeT {
     position: absolute;
@@ -102,10 +109,8 @@
     width: 100%;
     height: auto;
   }
-
 /*---------------------------Footer -------------------------------------*/
   .footer-distributed{
-    position: sticky;
     background-color: #000;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
@@ -120,6 +125,10 @@
     color:  #8f9296;
     font-size: 14px;
     margin: 0;
+  }
+  .footer-links a:hover {
+    transition-duration: 0.5s;
+    color: #ff1111;
   }
 
   /* Footer links */
@@ -139,8 +148,9 @@
     color:  inherit;
   }
 
-  .footer-links:hover {
-    color: #ee0000;
+  .footer-distributed p.footer-links a:hover {
+    transition-duration: 0.3s;
+    color:  #f00;
   }
 
   .footer-distributed .footer-right{
@@ -203,26 +213,31 @@
   }
 
   .vfooter-img:hover {
-    background-color: #7f00ff;
+    transition-duration: 0.3s;
+    background-color: #0077a5;
     width: 35px;
     height: 35px;
   }
   .bfooter-img:hover {
-    background-color: #00f;
+    transition-duration: 0.3s;
+    background-color: #3b5998;
     width: 35px;
     height: 35px;
   }
   .gfooter-img:hover {
-    background-color: #0f0;
+    transition-duration: 0.3s;
+    background-color: #6abf4d;
     width: 35px;
     height: 35px;
   }
   .ofooter-img:hover {
+    transition-duration: 0.3s;
     background-color: #ff8800;
     width: 35px;
     height: 35px;
   }
   .rfooter-img:hover {
+    transition-duration: 0.3s;
     background-color: #ff0000;
     width: 35px;
     height: 35px;
