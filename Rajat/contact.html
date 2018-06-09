@@ -8,6 +8,7 @@
     <style>
       #contact {
         background: url('images/contact.jpg');
+        z-index: 1;
         background-size: cover;
         min-width: 100%;
         min-height: 100%;
@@ -16,9 +17,9 @@
       }
 
       .contact-form {
-        border-radius: 5px;
+        border-radius: 3px;
         position: absolute;
-        top: 8%;
+        top: 10%;
         left: 60%;
         padding-top: 10px;
         padding-right: 30px;
@@ -27,6 +28,15 @@
         background-color: #77777799;
       }
 
+       @media screen and (max-width: 600px) {
+          .contact-form {
+            border-radius: 3px;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+          }
+        }
+
       .contact-form:hover {
         transition-delay: 0.1s;
         transition-duration: 2s;
@@ -34,31 +44,10 @@
         color: #ffffffee;
       }
 
-      .que {
-        position: absolute;
-        top: 70%;
-        text-align: lef;
-        padding: 50px;
-      }
-
       .btn {
-        margin-left: 100px;
-        padding-left: 20px;
+        margin: 10px;
+        padding-left: 10px;
         padding-right: 20px;
-        padding: 10px;
-      }
-
-      .esc {
-        margin-left: 100px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding: 10px;
-        transition-duration: 4s;
-        transition-timing-function: cubic-bezier(0.1, 1.4, 0.5, 0.8);
-      }
-      .esc:hover {
-
-        margin-left: -300px;
       }
 
       .for-footer-contact {
@@ -88,8 +77,22 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
+    <section id="contact">
+      <div class="contact-form">
+        <form name="contact" onsubmit="form()">  
+          <label><h1>Contact </h1></label>
+          <p>Name : &nbsp;<input type="text" name="name"></p>
+          <p>Age&nbsp; &nbsp; : &nbsp;<input type="text" name="age"></p>
+          <p>Email  : &nbsp;<input type="text" name="email"></p>
+          <p>Message</p>
+          <textarea name="message" rows="5" cols="50" placeholder="Your message Here"></textarea>
+          <br>
+          <button type="submit" class="btn"> <h3>Submit</h3></button>
+          </form>
+      </div>
+    </section>
   
-      <footer class="footer-distributed" style="position: absolute; top: 130%">
+      <footer class="footer-distributed" style="position: absolute; top: 65%">
         <div class="footer-right">
           <a href="#" >
             <img src="images/icons/v.png" class="vfooter-img">

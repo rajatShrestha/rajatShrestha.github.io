@@ -3,7 +3,7 @@
   body {
     margin: 0;
     font-family: 'anton', sans-serif;
-    background-color: #010201;
+    background-color: #111;
     font-size: 11pt;
   }
 /*---------------------------Nav-Bar -----------------------------------*/
@@ -42,7 +42,7 @@
   }
 
   /*---------------------------Responsive Nav-Bar -------------------------*/
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 600px) {
       .topnav a {
         display: none;
       }
