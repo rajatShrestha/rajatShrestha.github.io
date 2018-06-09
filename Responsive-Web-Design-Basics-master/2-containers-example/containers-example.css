@@ -47,7 +47,7 @@ h2 {
   box-sizing: border-box; }
 
 .container {
-  max-width: 960px;
+  max-width: 1100px;
   *zoom: 1; }
   .container:before, .container:after {
     content: " ";
@@ -61,7 +61,7 @@ h2 {
   box-sizing: border-box;
   padding: 20px; }
 
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .column {
     float: none;
     width: auto; 

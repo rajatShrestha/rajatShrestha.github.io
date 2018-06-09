@@ -3,7 +3,6 @@ function form() {
   var name = document.forms["contact"]["name"].value;
   var age = document.forms["contact"]["age"].value;
   var email = document.forms["contact"]["email"].value;
-  var gender = document.forms["contact"]["gender"].value;
   var message = document.forms["contact"]["message"].value;
   
   if (name == "" ||  email == "" || message == ""){
@@ -30,11 +29,13 @@ window.onload = function typeWriter() {
   }
 }
 
-// pop up messages
-function yes() {
-  alert("Thank you for your time.");
-}
 
-function no() {
-  alert("May your life be full of corurseworks!");
+//for the navbar
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+      x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
 }
