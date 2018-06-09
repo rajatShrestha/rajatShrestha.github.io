@@ -254,7 +254,7 @@
   .container {
     margin: 30px auto;
     background-color: #000;
-    padding: 50px;
+    padding: 30px;
     box-sizing: border-box; }
 
   .container {
@@ -274,7 +274,7 @@
     float: left;
     width: 50%;
     box-sizing: border-box;
-    padding: 20px; }
+    padding:10px; }
 
   @media (max-width: 800px) {
     .column {
