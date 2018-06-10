@@ -31,9 +31,9 @@
   } 
   @-webkit-keyframes rev {  
     0% { color: #fff; }
-    80% { color: #fcc; }
-    85% { color: #faa; }
-    90% { color: #f77; }    
+    87% { color: #fbb; }
+    92% { color: #f77; }
+    96% { color: #f44; }    
     100% { color: #f11; }
 
     
@@ -50,7 +50,7 @@
     background-color: #000;
     color: #f00;
     -webkit-animation-name: rev;  
-    -webkit-animation-duration: 5s; 
+    -webkit-animation-duration: 4s; 
   }
   .h {
     font-family: "Source Sans Pro", sans-serif;
@@ -299,7 +299,6 @@
     width: 35px;
     height: 35px;
   }
-
 /*---------------------------Container ----------------------------------*/
   h2, h3 {
     text-align: center;
