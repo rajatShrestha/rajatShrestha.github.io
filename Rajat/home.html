@@ -2,7 +2,6 @@
 <html>
   <head> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <link href="images/favicon.ico" rel="shortcut icon">
     <link href="responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -100,6 +99,19 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript">
+      // JavaScript to show the typing effect
+      var i = 0;
+      var txt = 'Welcome to my page, please scroll to continue';
+      window.onload = function typeWriter() {
+        if (i < txt.length) {
+          // writes each induvidual letters in the string
+          document.getElementById("homeT").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, 80);
+        }
+      }
+    </script>
     <script src="scrypts.js" type="text/javascript"></script>
   </body>
 </html>

@@ -17,17 +17,7 @@ function form() {
   }
 }
 
-// JavaScript to show the typing effect
-var i = 0;
-var txt = 'Welcome to my page, please scroll to continue';
-window.onload = function typeWriter() {
-  if (i < txt.length) {
-    // writes each induvidual letters in the string
-    document.getElementById("homeT").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, 80);
-  }
-}
+
 
 
 //for the navbar
