@@ -6,6 +6,66 @@
     background-color: #111;
     font-size: 11pt;
   }
+  @-webkit-keyframes hidRed {  
+    0% { color: #000; }
+    5% { color: #100; }
+    10% { color: #200; }
+    15% { color: #300; }
+    20% { color: #400; }
+    25% { color: #500; }
+    30% { color: #600; }
+    35% { color: #700; }
+    40% { color: #800; }
+    45% { color: #900; }
+    50% { color: #a00; }
+    55% { color: #b00; }
+    60% { color: #c00; }
+    65% { color: #d00; }
+    70% { color: #e00; }
+    75% { color: #f00; }
+    80% { color: #f10; }
+    85% { color: #f01; }
+    90% { color: #f20; }
+    95% { color: #f55; }
+    100% { color: black; }
+  } 
+  @-webkit-keyframes rev {  
+    0% { color: #fff; }
+    80% { color: #fcc; }
+    85% { color: #faa; }
+    90% { color: #f77; }    
+    100% { color: #f11; }
+
+    
+  }   
+  h6 {
+    margin: 0px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    -webkit-animation-name: hidRed;  
+    -webkit-animation-duration: 9s; 
+    color: #000;
+  }
+  span {
+    background-color: #000;
+    color: #f00;
+    -webkit-animation-name: rev;  
+    -webkit-animation-duration: 5s; 
+  }
+  .h {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+    font-size: 18px;
+    -webkit-animation-name: hidRed;  
+    -webkit-animation-duration: 10s; 
+  }
+  .r {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #f00;
+    font-size: 18px;
+    -webkit-animation-name: rev;  
+    -webkit-animation-duration: 110s; 
+  }
 /*---------------------------Nav-Bar -----------------------------------*/
   .topnav {
     overflow: hidden;
