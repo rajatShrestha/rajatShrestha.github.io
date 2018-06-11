@@ -22,7 +22,7 @@
     60% { color: #c00; }
     65% { color: #d00; }
     70% { color: #e00; }
-    75% { color: #f00; }
+    75% { color: #D91414; }
     80% { color: #f10; }
     85% { color: #f01; }
     90% { color: #f20; }
@@ -48,7 +48,7 @@
   }
   span {
     background-color: #000;
-    color: #f00;
+    color: #D91414;
     -webkit-animation-name: rev;  
     -webkit-animation-duration: 4s; 
   }
@@ -61,7 +61,7 @@
   }
   .r {
     font-family: "Source Sans Pro", sans-serif;
-    color: #f00;
+    color: #D91414;
     font-size: 18px;
     -webkit-animation-name: rev;  
     -webkit-animation-duration: 110s; 
@@ -207,7 +207,7 @@
 
   .footer-distributed p.footer-links a:hover {
     transition-duration: 0.3s;
-    color:  #f00;
+    color:  #D91414;
   }
 
   .footer-distributed .footer-right{
@@ -418,4 +418,33 @@
       float: none;
       width: auto; 
     } 
+  }
+
+  .edu {
+    margin: 10px;
+    align-self: center;
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+    height: 120px;
+    background: #fc0000;
+    min-width: 150px; 
+  }
+
+  .edu p{
+    font-size: 18px;
+  }
+
+  .skills {
+    display: inline-block;
+    height: 200px;
+    width: auto;
+    margin: 1%;
+    background: #eee;
+    min-width: 150px;
+  }
+
+  .skills ul{
+    text-align: left;
+    font-size: 22px;
   }
