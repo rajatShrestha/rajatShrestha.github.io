@@ -440,11 +440,12 @@
     height: 200px;
     width: auto;
     margin: 1%;
-    background: #eee;
+    background: #000;
     min-width: 150px;
   }
 
   .skills ul{
+    color: #f11;
     text-align: left;
     font-size: 22px;
   }
