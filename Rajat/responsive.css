@@ -31,8 +31,8 @@
   } 
   @-webkit-keyframes rev {  
     0% { color: #fff; }
-    87% { color: #fbb; }
-    92% { color: #f77; }
+    87% { color: #ddd; }
+    92% { color: #aaa; }
     96% { color: #f44; }    
     100% { color: #f11; }
 
@@ -396,6 +396,12 @@
     color: #000;
     background: #111;
     min-width: 150px;
+  }
+
+  .item-img img:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    transition-delay: 0.1s;
   }
 
   .item-long {
