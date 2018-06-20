@@ -1,0 +1,26 @@
+/*---------------------------Home----------------------------------------*/
+
+img {
+      -webkit-filter: grayscale(1);
+      -webkit-transition: all 2s ease-in-out;  
+    }
+
+img:hover {
+ 	 filter: none;
+  	-webkit-filter: grayscale(0);
+}
+
+
+#homeT {
+	position: absolute; 
+	top: 15%;
+	left: 8%;
+	font-size: 4vw;
+	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	#homeT {
+		top: 30%;
+	}
+}

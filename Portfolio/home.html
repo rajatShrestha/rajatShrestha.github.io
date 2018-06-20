@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="icons/favicon.ico" rel="shortcut icon">
+    <link href="styles.css" rel="stylesheet">
+    <link href="pages.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="t-nav">
+      <img src="icons/rs.png" style="height: 3em; padding: 0;">
+      <div class="nav-link">
+        <ul>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <picture style="width: 100%;">
+        <source srcset="images/sdl.jpeg" media="(max-width: 600px)">
+        <source srcset="images/sdm.jpeg">
+        <img src="images/sd.jpeg" style="width:100%;">">
+      </picture>
+      <div id="homeT" style=""></div>
+    </div>
+    <footer class="foot">
+      <div class="right-foot">
+        <a href="https://www.linkedin.com/in/rajat-shrestha-41a338165/" >
+          <img src="icons/v.png" class="v-foot-icon">
+        </a>
+        <a href="https://www.facebook.com/rajat.shrestha.129" >
+          <img src="icons/b.png" class="b-foot-icon">
+        </a>
+        <a href="https://www.google.com/maps/place/27%C2%B043'48.9%22N+85%C2%B018'55.9%22E/@27.730244,85.3149858,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d27.7302444!4d85.3155329" >
+          <img src="icons/g.png" class="g-foot-icon">
+        </a>
+        <a href="https://www.instagram.com/rajat__shrestha/" >
+          <img src="icons/o.png" class="o-foot-icon">
+        </a>
+        <a href="https://plus.google.com/u/0/112361983691225866305" >
+          <img src="icons/r.png" class="r-foot-icon">
+        </a>
+      </div>
+      <div class="left-foot">
+        <p class="foot-links">
+          <a href="home.html">Home</a>.
+          <a href="about.html">About</a>.
+          <a href="portfolio.html" >Portfolio</a>
+        </p>
+        <p>Rajat Shrestha © 2018</p>
+      </div>
+      <script type="text/javascript">
+      // JavaScript to show the typing effect
+      var i = 0;
+      var txt = 'Welcome to my page, please scroll to continue';
+      window.onload = function typeWriter() {
+        if (i < txt.length) {
+          // writes each induvidual letters in the string
+          document.getElementById("homeT").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, 80);
+        }
+      }
+    </script>
+    </footer>
+  </body>
+</html>
+ 

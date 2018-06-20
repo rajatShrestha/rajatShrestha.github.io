@@ -311,6 +311,7 @@
     font-size: 24px;
   }
   .container {
+    flex: all;
     margin: 30px auto;
     background-color: #000;
     padding: 30px;
