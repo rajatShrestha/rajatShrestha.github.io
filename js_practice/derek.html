@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>js practice</title>
+	</head>
+	<body>
+		<script>
+			var MyName = "string";
+			var MyAge= ""
+
+			document.write("add = ", 5+4, "<br />");
+			document.write("sub = ", 5-4, "<br />");
+			document.write("mul = ", 5*4, "<br />");
+			document.write("div = ", 5/4, "<br />");
+
+			document.write("div = ", 5/4, "<br />");
+
+			document.write("Max = ", Number.MAX_VALUE, "<br />");
+			document.write("Min = ", Number.MIN_VALUE, "<br />");
+
+			var randNum = 5;
+			document.write("R++ = ", randNum++, "<br />");
+			document.write("++R = ", ++randNum, "<br />");
+			document.write("R+=5 = ", randNum+=5, "<br />");
+			document.write("R-=9 = ", randNum+=9, "<br />");
+
+			// Round number to 2 decimal places
+			var balance = 1563.8347;
+			document.write("Monthly payment : ", (balance / 12).toFixed(9), "<br />");
+
+			/*precision for 16 dec places*/
+			n1 = 0.1000000000000001;
+			n2 = 0.1000000000000001;
+			document.write(n1 + n2, "<br/>");
+
+			/*after 16 dec places they round it up*/
+			n1 = 0.10000000000000001;
+			n2 = 0.10000000000000001;
+			document.write(n1 + n2, "<br/>");
+
+
+			//maths
+			document.write("Math.E = ", Math.E, "<br/>");
+			document.write("Math.PI = ", Math.PI, "<br/>");
+			 
+			document.write("Math.abs(-8) = ", Math.abs(-8), "<br/>");
+			document.write("Math.cbrt(1000) = ", Math.cbrt(1000), "<br/>");
+			document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br/>");
+			document.write("Math.floor(6.45) = ", Math.floor(6.45), "<br/>");
+			document.write("Math.round(6.45) = ", Math.round(6.45), "<br/>");
+			document.write("Math.log(10) = ", Math.log(10), "<br/>"); // Natural log
+			document.write("Math.log10(10) = ", Math.log10(10), "<br/>"); // Base 10 log
+			document.write("Math.max(10,5) = ", Math.max(10,5), "<br/>");
+			document.write("Math.min(10,5) = ", Math.min(10,5), "<br/>");
+			document.write("Math.pow(4,2) = ", Math.pow(4,2), "<br/>");
+			document.write("Math.sqrt(1000) = ", Math.sqrt(1000), "<br/>");
+			 
+
+ 
+			document.write("Random #  = ", Math.floor(Math.random()*100000qq), "<br/>");
+			document.write("Random # (1-10) = ", Math.floor((Math.random() * 10) + 1), "<br/>");
+
+
+
+
+		</script>
+	</body>
+</html>

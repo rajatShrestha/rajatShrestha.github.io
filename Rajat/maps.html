@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px; 
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var ktm = {lat:  27.730244, lng: 85.315589};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: ktm});
+        var marker = new google.maps.Marker({position: ktm, map: map});
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+    </script>
+  </body>
+</html>
